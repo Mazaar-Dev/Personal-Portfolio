@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  /* background: #f9f9f9;
+  color: #333; */
+}
+
+
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #2c2c2c;
+  color: #eeeeee;
+}
+
+
+/* header and nav */
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  display: none;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  /* padding: 1rem; */
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #007acc;
+  color: white;
+}
+
+
+
+/* sections of the body */
+
+section a {  
+  color: inherit;
+  /* text-decoration: none; */
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project {
+  background-color: inherit;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #007acc;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+
+
+/* about me content */
+
+.about-content {
+  padding-top: 1em;
+  display: flex;
+}
+
+.about-text-content {
+  margin-right: 50px;  
+}
+
+.about-text-content p {
+  margin-bottom: 20px;    
+}
+
+#profilePic {
+  max-height: 400px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* skills  */
+
+.skills-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.skills-icons i {
+  font-size: 48px;
+  transition: transform 0.3s;
+}
+
+.skills-icons i:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* animation */
+
+/* blinking cursor */
+
+.cursor {
+  display: inline-flex;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  40% {opacity: 0;}
+}
+
+
+
+/* responsive layout */
+
+
+
+@media (max-width: 768px) {
+  .about-content {
+    display: inline;
+  }
+  
+  nav img {
+    display: flex;
+    margin-left: 2rem;
+  }
+
+  .navBar {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navBar.active {
+    position: absolute;
+    display: flex;
+    background: #333;  
+    padding: 1rem;
+  }
+}
+
